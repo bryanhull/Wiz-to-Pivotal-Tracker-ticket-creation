@@ -1,0 +1,6 @@
+{
+  "name": "Wiz - {{issue.id}} - {{control.name}}",
+  "description": "Issue ID: {{issue.id}}\n\nStatus: {{issue.status}}\nSeverity: {{issue.severity}}\nCreated: {{issue.createdAt}}\nProjects: {{#issue.projects}}{{name}}, {{/issue.projects}}\n\nResource ID: {{issue.entitySnapshot.providerId}}\nResource Name: {{issue.entitySnapshot.name}}\nResource Type: {{issue.entitySnapshot.nativeType}}\nCloud Platform: {{issue.entitySnapshot.cloudPlatform}}\nSubscription ID: {{issue.entitySnapshot.subscriptionExternalId}}\nSubscription Name: {{issue.entitySnapshot.subscriptionName}}\nRegion: {{issue.entitySnapshot.region}}\nResource Status: {{issue.entitySnapshot.status}}\nCloud Provider URL: {{issue.entitySnapshot.cloudProviderURL}}\n\nControl ID: {{issue.control.id}}\nControl Name: {{issue.control.name}}\nControl Description: {{issue.control.descriptionPlainText}}\nControl Severity: {{issue.control.severity}}\n\nTrigger Source: {{triggerSource}}\nTrigger Type: {{triggerType}}\nRule ID: {{ruleId}}\nRule Name: {{ruleName}}\nUpdated Fields: {{#changedFields}} {{name}} field was changed from {{previousValue}} to {{newValue}}, {{/changedFields}}\nChanged By: {{changedBy}}\n\nIssue URL: [Wiz Issue](https://wiz.io/issues/{{issue.id}})",
+  "story_type": "feature",  // Modify this based on your context: "feature", "bug", or "chore"
+  "current_state": "unscheduled"
+}
